@@ -15,14 +15,24 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="common" target="1.5" />
-      <module name="common-utils" target="1.5" />
-      <module name="fgyx" target="1.5" />
-      <module name="model" target="1.5" />
-      <module name="sercice-utils" target="1.5" />
-      <module name="service" target="1.5" />
+      <module name="common" target="1.8" />
+      <module name="common-utils" target="1.8" />
+      <module name="fgyx" target="1.8" />
+      <module name="model" target="1.8" />
+      <module name="sercice-utils" target="1.8" />
+      <module name="service" target="1.8" />
       <module name="service-client" target="8" />
-      <module name="service-gateway" target="1.5" />
+      <module name="service-gateway" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="common-utils" options="-parameters" />
+      <module name="model" options="-parameters" />
+      <module name="sercice-utils" options="-parameters" />
+      <module name="service-client" options="-parameters" />
+      <module name="service-gateway" options="-parameters" />
+    </option>
   </component>
 </project>
